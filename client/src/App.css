@@ -1,0 +1,105 @@
+/* Container for the form and task list */
+.center{
+  text-align: center;
+}
+.Caps{
+  text-transform: capitalize;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Input styling */
+.container input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.container button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list styling */
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.container li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.container li h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.container li p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Buttons inside each task */
+.container li button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.container li button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for two buttons in a row */
+.container li button:first-child {
+  margin-bottom: 10px;
+}
+
+.container li button:last-child {
+  background-color: #dc3545; /* Red for delete */
+}
+
+.container li button:last-child:hover {
+  background-color: #c82333;
+}

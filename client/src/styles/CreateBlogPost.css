@@ -1,0 +1,91 @@
+/* CreateBlogPost.css */
+
+.blog-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  .blog-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width:600px;
+  }
+  
+  .blog-form h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .middle{
+    /* padding: 20px; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 5%;
+  }
+  
+  .blog-input{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .blog-textarea {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+  }
+  
+  .blog-input:focus, 
+  .blog-textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  .blog-textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Optional: Adding Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .blog-form {
+      padding: 20px;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+    }
+  }
+  
