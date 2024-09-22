@@ -5,8 +5,12 @@ const protectedRoutes = require('./routes/protected');
 const cors = require('cors');
 const blogRoutes = require('./routes/blogRoutes'); // Import blog routes
 
+
+
 // Connect to MongoDB
 connectDB();
+
+
 
 const app = express();
 
